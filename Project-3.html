@@ -97,48 +97,130 @@
                         آدرس وارد شد
                     </div>
                 </div>
-                
+
                 <div class="row">
-                <div class="col-5">
-                    <label for="country" >کشور</label>
-                   <select class="custom-select" id="country">
-                       <option value="1">انتخاب کنید...</option>
-                       <option value="2">ایران</option>
-                   </select>
-                    <div class="invalid-feedback">
-                        لطفا کشور را وارد کنید
+                    <div class="col-5">
+                        <label for="country">کشور</label>
+                        <select class="custom-select" id="country">
+                            <option value="1">انتخاب کنید...</option>
+                            <option value="2">ایران</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            لطفا کشور را وارد کنید
+                        </div>
+                        <div class="valid-feedback">
+                            کشور وارد شد
+                        </div>
                     </div>
-                    <div class="valid-feedback">
-                        کشور وارد شد
+
+                    <div class="col-4">
+                        <label for="county">استان</label>
+                        <select class="custom-select" id="county">
+                            <option value="1">انتخاب کنید...</option>
+                            <option value="2">تهران</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            لطفا استان را وارد کنید
+                        </div>
+                        <div class="valid-feedback">
+                            استان وارد شد
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <label>نام شهر</label>
+                        <input type="text" class="form-control" id="city" required>
+                        <div class="invalid-feedback">
+                            لطفا نام شهر را وارد کنید
+                        </div>
+                        <div class="valid-feedback">
+                            نام شهر وارد شد
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-4">
-                    <label for="county">استان</label>
-                   <select class="custom-select" id="county">
-                       <option value="1">انتخاب کنید...</option>
-                       <option value="2">تهران</option>
-                   </select>
-                    <div class="invalid-feedback">
-                        لطفا استان را وارد کنید
+                <hr class="mb-4">
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">قبل از ارسال سفارش برای هماهنگی تماس گرفته
+                        شود </label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">ذخیره سازی اطلاعات برای خرید بعدی</label>
+                </div>
+
+                <hr class="mb-4">
+
+                <h4 class="mb-3">نوع پرداخت</h4>
+
+                <div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">بانک ملت</label>
                     </div>
-                    <div class="valid-feedback">
-                        استان وارد شد
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">زرین پال</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadioInline3" name="customRadioInline"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline3">بانک صادرات</label>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <label for="FirstName">نام دارنده کارتsmall</label>
+                        <input type="text" class="form-control" id="FirstName" required>
+                        <div class="invalid-feedback">
+                            لطفا نام دارنده کارت را وارد کنید
+                        </div>
+                        <div class="valid-feedback">
+                            نام دارنده کارت وارد شد
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <label for="LastName"> شماره کارت</label>
+                        <input type="text" class="form-control" id="LastName" required>
+                        <div class="invalid-feedback">
+                            لطفا شماره کارت را وارد کنید
+                        </div>
+                        <div class="valid-feedback">
+                            شماره کارت وارد شد
+                        </div>
+                    </div>
+
+                    <div class="col-3 mt-4">
+                        <label for="FirstName">اعتبار کارت</label>
+                        <input type="text" class="form-control" id="FirstName" required>
+                        <div class="invalid-feedback">
+                            لطفا اعتبار کارت را وارد کنید
+                        </div>
+                        <div class="valid-feedback">
+                            اعتبار کارت وارد شد
+                        </div>
+                    </div>
+
+                    <div class="col-3 mt-4">
+                        <label for="LastName">CVV2</label>
+                        <input type="text" class="form-control" id="LastName" required>
+                        <div class="invalid-feedback">
+                            لطفاCVV2 را وارد کنید
+                        </div>
+                        <div class="valid-feedback">
+                            CVV2 وارد شد
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-3">
-                    <label >نام شهر</label>
-                   <input type="text"  class="form-control" id="city" required>
-                    <div class="invalid-feedback">
-                        لطفا نام شهر را وارد کنید
-                    </div>
-                    <div class="valid-feedback">
-                        نام شهر وارد شد
-                    </div>
-                </div>
-            </div>
+                <hr class="mb-4">
 
+                <button class="btn btn-primary btn-lg btn-block" type="submit">ادامه و ثبت خرید</button>
             </form>
 
         </div>
@@ -206,9 +288,21 @@
 
 
     </div>
+
+    <footer class="text-center text-muted pt-5 my-5">
+        <p> © 1396-1397 مجله آموزشی راکت</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">حریم خصوصی</a></li>
+            <li class="list-inline-item"><a href="#"> قوانین</a></li>
+            <li class="list-inline-item"><a href="#"> پشتیبانی</a></li>
+        </ul>
+    </footer>
+
 </div>
 
+<script src="jquery-3.6.0.min.js"></script>
 <script src="bootstrap-4.0.0/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
